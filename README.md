@@ -1,4 +1,4 @@
-Embedded Grid
+Embedded Grid – [Demo](http://url.com/)
 ===
 
 Flexbox-based grid with seamless row embedding (nesting), minimum column width and tables-based fallback.
