@@ -1,0 +1,68 @@
+/* Grid */
+
+.row {
+
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	
+}
+
+	.row > * {
+	
+		display: table-cell;
+		padding: .5em;
+		
+	}
+	
+	.row .row {
+		
+		margin: -.5em;
+		width: calc(100% + 1em);
+
+	}
+	
+.flexbox .row {
+	
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+}
+
+	.flexbox .row > * {
+		
+		display: block;
+		-webkit-flex: auto;
+		-ms-flex: auto;
+		flex: auto;
+		width: 18em; /* Minimum column width */
+		
+	}
+
+/* Decoration */
+
+.d {
+	
+	background: #fffff0;
+	
+}
+
+.row > *:before {
+	
+	content: "A";
+	display: block;
+	height: 3em;
+	background: #bbb;
+	
+}
+
+	.row > .d:before {
+		
+		content: "";
+		display: none;
+	}
