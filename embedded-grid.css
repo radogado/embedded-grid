@@ -28,10 +28,6 @@
 	display: -ms-flexbox;
 	display: flex;
 	
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-
 }
 
 	.flexbox .row > * {
@@ -40,7 +36,25 @@
 		-webkit-flex: auto;
 		-ms-flex: auto;
 		flex: auto;
-		width: 18em; /* Minimum column width */
+		width: 10em; /* Minimum column width */
+		
+	}
+	
+	.flexbox .row.wrap {
+
+		 -webkit-justify-content: center;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	
+    
+	}
+
+	.flexbox .row.wrap > * {
+		
+		width: 10em; /* Minimum column width */
+		background: #eef;
+		-webkit-flex-grow: 0;
 		
 	}
 
